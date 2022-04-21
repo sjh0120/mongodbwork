@@ -1,0 +1,20 @@
+package com.bit;
+
+import java.util.List;
+
+import com.mongodb.MongoClient;
+import com.mongodb.ServerAddress;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		
+		ServerAddress addr=new ServerAddress("127.0.0.1",27017);
+		MongoClient client=new com.mongodb.MongoClient(addr);
+		List<String> names=client.getDatabaseNames();
+		for(int i=0; i<names.size(); i++) {
+			System.out.println(names.get(i));
+		}
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.bit;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		String ip="127.0.0.1";
+		int port=27017;
+
+	}
+
+}
